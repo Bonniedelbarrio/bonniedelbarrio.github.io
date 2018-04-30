@@ -4,12 +4,158 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Bonnie B.</title>
+	<link rel="icon" href="source/img/favicon.ico" type="image/x-icon"/>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div id="preloader">
+		<img src="source/img/loader.gif" width="50" height="50">
+	</div> 
+	<div id="info">
+		<div id="menu">
+			<ul>
+				<li>
+					<svg height="2%" width="0%" class="svgAbsMenu" id="intro">
+					  <line x1="50%" y1="100%" x2="100%" y2="100%" style="stroke:rgb(159, 29, 57);stroke-width:2" />
+					</svg>
+					<a href="#" onmouseenter="menuLine('intro', 1)" onmouseleave="menuLine('intro', 0)" onclick="infoView('in', 0)">INTRO</a>
+				</li>
+				<li>
+					<svg height="2%" width="0%" class="svgAbsMenu" id="work">
+					  <line x1="50%" y1="100%" x2="100%" y2="100%" style="stroke:rgb(159, 29, 57);stroke-width:2" />
+					</svg>
+					<a href="#" onmouseenter="menuLine('work', 1)" onmouseleave="menuLine('work', 0)" onclick="infoView('bb', 1)">WORK</a>
+				</li>
+				<li>
+					<svg height="2%" width="0%" class="svgAbsMenu" id="project">
+					  <line x1="50%" y1="100%" x2="100%" y2="100%" style="stroke:rgb(159, 29, 57);stroke-width:2" />
+					</svg>
+					<a href="#" onmouseenter="menuLine('project', 1)" onmouseleave="menuLine('project', 0)" onclick="infoView('pjt', 0)">PROJECT</a>
+				</li>
+			</ul>
+		</div>
+		<div id="tittle">
+			<div>
+				<h1>BONNIE B</h1>
+				<p>MEDIA ARTIST AND DIRECTOR</p>
+			</div>
+		</div>
+		
+		<div id="works">
+			<p><span onclick="infoView('bb', 1)">1</span><span onclick="infoView('ci', 1)">2</span><span onclick="infoView('lc', 1)">3</span><span onclick="infoView('ei', 1)">4</span></p>
+		</div>
+
+		<div class="workLeft" id="in">
+			<h1>BONNIE B</h1>
+			<h3>MEDIA ARTIST AND DIRECTOR<br>AT FREAKGROUND INTERACTIVE</h3>
+			<svg height="50%" width="100%" class="svgAbs">
+			  <line x1="15%" y1="5%" x2="50%" y2="5%" style="stroke:rgb(90,164,179);stroke-width:1" />
+			</svg>
+			<svg height="50%" width="100%" class="svgAbs">
+			  <line x1="20%" y1="0" x2="20%" y2="60%" style="stroke:rgb(90,164,179);stroke-width:1" />
+			</svg>
+			<p>jdsandovalo@unal.edu.co<br>
+			+57 321 513 77 88<br>
+			<a href="https://vimeo.com/davidbones">vimeo.com/davidbones</a><br>
+			<a href="https://www.instagram.com/hooleedelbarrio/">@hooleedelbarrio</a><br>
+			</p>
+		</div>
+		
+		<div class="workRight" id="bb">
+			<h1>B by B.</h1>
+			<h3>VIDEO EXPERIMENTAL</h3>
+			<svg height="50%" width="100%" class="svgAbs">
+			  <line x1="50%" y1="5%" x2="85%" y2="5%" style="stroke:rgb(90,164,179);stroke-width:1" />
+			</svg>
+			<svg height="50%" width="100%" class="svgAbs">
+			  <line x1="80%" y1="0" x2="80%" y2="60%" style="stroke:rgb(90,164,179);stroke-width:1" />
+			</svg>
+			<p>Composición experimental en Audio y video que toma como punto de inicio la eliminación hipotética del lenguaje, considerando formas de comulación no humanas, como el intermedio entre lo análogo y lo digital.<br><br>
+			Año: 2018<br>
+			Medio: Video Monocanal<br>
+			Equipo: Bonnie B.</p>
+			<div class="btnDiv">
+				<a target="_blank" href="https://vimeo.com/266832387">
+					<button type="button" class="button">VER PROYECTO</button>
+				</a>
+			</div>	
+		</div>
+		
+		<div class="workLeft" id="ci">
+			<h1>CIRCULO INTERNO</h1>
+			<h3>VIDEO EXPERIMENTAL</h3>
+			<svg height="50%" width="100%" class="svgAbs">
+			  <line x1="15%" y1="5%" x2="50%" y2="5%" style="stroke:rgb(90,164,179);stroke-width:1" />
+			</svg>
+			<svg height="50%" width="100%" class="svgAbs">
+			  <line x1="20%" y1="0" x2="20%" y2="60%" style="stroke:rgb(90,164,179);stroke-width:1" />
+			</svg>
+			<p>Composición experimental en video sobre una reflexión acerca de la propia visión de yo, reconociendo el cuerpo como vehículo y resistencia el alma como vibración fundamental de la personalidad y la mente como colisión entre ambos.<br><br>Año: 2015<br>
+			Medio: Video Mono canal<br>
+			Equipo: Bonnie B.</p>
+			<div class="btnDiv">
+				<a target="_blank" href="https://vimeo.com/121865376">
+					<button type="button" class="button">VER PROYECTO</button>
+				</a>
+			</div>	
+		</div>
+		
+		<div class="workRight" id="lc">
+			<h1>UNLUGARMASCALIDO</h1>
+			<h3>DOCUMENTAL EXPERIMENTAL (WIP)</h3>
+			<svg height="50%" width="100%" class="svgAbs">
+			  <line x1="50%" y1="5%" x2="85%" y2="5%" style="stroke:rgb(90,164,179);stroke-width:1" />
+			</svg>
+			<svg height="50%" width="100%" class="svgAbs">
+			  <line x1="80%" y1="0" x2="80%" y2="60%" style="stroke:rgb(90,164,179);stroke-width:1" />
+			</svg>
+			<p>Exploración experimental del Documental autobiográfico y de ensayo, en esta pieza busco construir un retrato de la manera en que percibo a algunas de las mujeres que me son importantes y la forma en que encuentro en ellas refugio. aun en desarrollo y basado en la observación delicada y profunda de estas mujeres, la pieza pretende convertirse en un proyecto de instalación documental, en el que piezas como esta y algunas otras, de naturaleza y forma distintas, se distribuyen y ocupan el espacio llegando incluso a la interactividad.<br><br>
+			Año: en proceso desde 2017<br>
+			Medio: Video Mono canal (en expansión)<br>
+			Equipo: Bonnie B.</p>
+			<div class="btnDiv">
+				<a target="_blank" href="https://www.youtube.com/watch?v=3hWOtn2OtQI">
+					<button type="button" class="button">VER PROYECTO</button>
+				</a>
+			</div>	
+		</div>
+
+		<div class="workLeft" id="ei">
+			<h1>EXPERIMENTOS INDEPENDIENTES</h1>
+			<h3>VARIOS</h3>
+			<svg height="50%" width="100%" class="svgAbs">
+			  <line x1="15%" y1="5%" x2="50%" y2="5%" style="stroke:rgb(90,164,179);stroke-width:1" />
+			</svg>
+			<svg height="50%" width="100%" class="svgAbs">
+			  <line x1="20%" y1="0" x2="20%" y2="60%" style="stroke:rgb(90,164,179);stroke-width:1" />
+			</svg>
+			<p>La mayoría de mis proyectos se basan en experimentaciones espontaneas y conocimientos compartidos que terminan tejiéndose transversales en la manera en que manipulo el medio y la reflexión que este me genera como forma de comunicación y contenedor de ideas. desde 2018 algunos de los resultados de estos experimentos están alojados en mi cuenta de Instagram junto con algunos de mis dibujos y trabajo alterno al mediático.<br><br>
+			Año: Desde 2017<br>
+			Medio: Varios<br>
+			Equipo: Bonnie B.</p>
+			<div class="btnDiv">
+				<a target="_blank" href="https://www.instagram.com/hooleedelbarrio/">
+					<button type="button" class="button">VER PROYECTO</button>
+				</a>
+			</div>	
+		</div>
+		
+		<div class="workRight" id="pjt">
+			<h1>UNO DE NOSOTROS ES LA MATERIA</h1>
+			<h3>VARIOS</h3>
+			<svg height="50%" width="100%" class="svgAbs">
+			  <line x1="50%" y1="5%" x2="85%" y2="5%" style="stroke:rgb(90,164,179);stroke-width:1" />
+			</svg>
+			<svg height="50%" width="100%" class="svgAbs">
+			  <line x1="80%" y1="0" x2="80%" y2="60%" style="stroke:rgb(90,164,179);stroke-width:1" />
+			</svg>
+			<p>Mi propuesta de proyecto para la KHM es la mencionada expansión del Documental Experimental UNLUGARMASCALIDO, se propone utilizar material personal de archivo y piezas individuales realizadas con, desde y para las mujeres que aparecen en el documental a forma de retrato; esta vez ocupando el espacio, y apelando a la interactividad, por medio de video objetos, esculturas de luz, videoinstalaciones e instalaciones sonoras que cuentan una historia aun en desarrollo.</p>
+		</div>
+		
+	</div>
 	<!-- LIBS -->
-	<script src="js/libs/dat.gui.min.js"></script>
-	<script src="js/libs/stats.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 
 	<!-- MAIN THREEJS -->
 	<script src="js/three.min.js"></script>
@@ -21,19 +167,12 @@
 	<!-- CONTROLS -->
 	<script src="js/controls/OrbitControls.js"></script>
 
-	<!-- EFFECTS -->
-	<script src="js/effects/AnaglyphEffect.js"></script>
-	<script src="js/effects/ParallaxBarrierEffect.js"></script>
-
 	<!-- SHADERS -->
 	<script src="js/shaders/CopyShader.js"></script>
-	<script src="js/shaders/DotScreenShader.js"></script>
+	<script src="js/shaders/ConvolutionShader.js"></script>
 	<script src="js/shaders/RGBShiftShader.js"></script>
 	<script src="js/shaders/FilmShader.js"></script>
-	<script src="js/shaders/ConvolutionShader.js"></script>
-	<script src="js/shaders/HorizontalBlurShader.js"></script>
-	<script src="js/shaders/VerticalBlurShader.js"></script>
-	<script src="js/shaders/KaleidoShader.js"></script>
+	<script src="js/shaders/VignetteShader.js"></script>
 
 	<!-- POSTPROCESSING -->
 	<script src="js/postprocessing/EffectComposer.js"></script>
@@ -42,7 +181,7 @@
 	<script src="js/postprocessing/FilmPass.js"></script>
 	<script src="js/postprocessing/BloomPass.js"></script>
 	
-	
+	<!-- MAIN SCRIPT -->
 	<script src="js/main.js"></script>
 
 </body>

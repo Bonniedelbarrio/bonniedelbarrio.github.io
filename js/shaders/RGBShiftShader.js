@@ -15,8 +15,8 @@ THREE.RGBShiftShader = {
 	uniforms: {
 
 		"tDiffuse": { value: null },
-		"amount":   { value: 0.005 },
-		"angle":    { value: 45 }
+		"amount":   { value: 0.003 },
+		"angle":    { value: 0.0 }
 
 	},
 
