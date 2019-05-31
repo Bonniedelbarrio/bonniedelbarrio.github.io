@@ -34,7 +34,7 @@ function basicSetup(){
 	// INIT SCENE
 	scene = new THREE.Scene();
 	scene.background = new THREE.Color( 0x2d2d2d );
-	scene.fog = new THREE.Fog( 0x050505, 1, 15 );
+	scene.fog = new THREE.Fog( 0x429356, 1, 15 );
 
 	// INIT CAMERA
 	fov = 125;
@@ -42,7 +42,7 @@ function basicSetup(){
 	near = 0.1;
 	far = 1000;
 	camera = new THREE.PerspectiveCamera( fov, aspect, near, far );
-	camera.position.x = 7.4;
+	camera.position.x = 8;
 
 	// INIT RENDERER
 	renderer = new THREE.WebGLRenderer();
