@@ -299,7 +299,7 @@ function postPro (){
 	//PASSES
 	var renderPass = new THREE.RenderPass( scene, camera );
 	var bloomPass =  new THREE.BloomPass( 1, 25, 4, 2048 );
-	var filmPass = new THREE.FilmPass( 0.2, 0.25, 480, false );
+	var filmPass = new THREE.FilmPass( 0.2, 0.75, 648, false );
 	var rgbPass = new THREE.ShaderPass( THREE.RGBShiftShader );
 	var vignettePass = new THREE.ShaderPass( THREE.VignetteShader );
 
