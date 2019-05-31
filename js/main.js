@@ -300,7 +300,7 @@ function postPro (){
 	var renderPass = new THREE.RenderPass( scene, camera );
 	var bloomPass =  new THREE.BloomPass( 1, 25, 4, 2048 );
 	var filmPass = new THREE.FilmPass( 0.2, 0.25, 6, false );	
-	var filmPass2 = new THREE.FilmPass( 0.2, 0.25, 120, false );
+	var filmPass2 = new THREE.FilmPass( 0.2, 0.25, 480, true );
 	kaleidoPass = new THREE.ShaderPass( THREE.KaleidoShader );
 	var rgbPass = new THREE.ShaderPass( THREE.RGBShiftShader );
 	var vignettePass = new THREE.ShaderPass( THREE.VignetteShader );
