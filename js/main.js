@@ -33,7 +33,7 @@ if ( Detector.webgl ) {
 function basicSetup(){
 	// INIT SCENE
 	scene = new THREE.Scene();
-	scene.background = new THREE.Color( 0x2d2d2d );
+	scene.background = new THREE.Color( 0x1c1c1c );
 	scene.fog = new THREE.Fog( 0x429356, 1, 15 );
 
 	// INIT CAMERA
