@@ -33,8 +33,8 @@ if ( Detector.webgl ) {
 function basicSetup(){
 	// INIT SCENE
 	scene = new THREE.Scene();
-	scene.background = new THREE.Color( 0x1c1c1c );
-	scene.fog = new THREE.Fog( 0x429356, 1, 15 );
+	scene.background = new THREE.Color( 0x07101c );
+	scene.fog = new THREE.Fog( 0x050505, 1, 15 );
 
 	// INIT CAMERA
 	fov = 125;
@@ -42,7 +42,7 @@ function basicSetup(){
 	near = 0.1;
 	far = 1000;
 	camera = new THREE.PerspectiveCamera( fov, aspect, near, far );
-	camera.position.x = 7.7;
+	camera.position.x = 7.4;
 
 	// INIT RENDERER
 	renderer = new THREE.WebGLRenderer();
@@ -283,7 +283,6 @@ function infoView ( id, x ){
 	TweenMax.to("#ci", 0.5, {opacity:0, zIndex: -100, ease: Circ.easeIn});
 	TweenMax.to("#lc", 0.5, {opacity:0, zIndex: -100, ease: Circ.easeIn});
 	TweenMax.to("#ei", 0.5, {opacity:0, zIndex: -100, ease: Circ.easeIn});
-	TweenMax.to("#ol", 0.5, {opacity:0, zIndex: -100, ease: Circ.easeIn});
 	TweenMax.to("#pjt", 0.5, {opacity:0, zIndex: -100, ease: Circ.easeIn});
 
 
@@ -299,7 +298,9 @@ function postPro (){
 	//PASSES
 	var renderPass = new THREE.RenderPass( scene, camera );
 	var bloomPass =  new THREE.BloomPass( 1, 25, 4, 2048 );
-	var filmPass = new THREE.FilmPass( 0.2, 0.75, 648, false );
+	var filmPass = new THREE.FilmPass( 0.2, 1.0, 6, false );	
+	var filmPass2 = new THREE.FilmPass( 0.2, 1.5, 648, false );
+	kaleidoPass = new THREE.ShaderPass( THREE.KaleidoShader );
 	var rgbPass = new THREE.ShaderPass( THREE.RGBShiftShader );
 	var vignettePass = new THREE.ShaderPass( THREE.VignetteShader );
 
