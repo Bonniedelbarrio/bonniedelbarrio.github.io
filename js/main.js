@@ -282,6 +282,7 @@ function infoView ( id, x ){
 	TweenMax.to("#bb", 0.5, {opacity:0, zIndex: -100, ease: Circ.easeIn});
 	TweenMax.to("#ci", 0.5, {opacity:0, zIndex: -100, ease: Circ.easeIn});
 	TweenMax.to("#lc", 0.5, {opacity:0, zIndex: -100, ease: Circ.easeIn});
+	TweenMax.to("#ol", 0.5, {opacity:0, zIndex: -100, ease: Circ.easeIn});
 	TweenMax.to("#ei", 0.5, {opacity:0, zIndex: -100, ease: Circ.easeIn});
 	TweenMax.to("#pjt", 0.5, {opacity:0, zIndex: -100, ease: Circ.easeIn});
 
