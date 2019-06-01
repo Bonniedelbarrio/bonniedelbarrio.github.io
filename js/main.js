@@ -42,7 +42,7 @@ function basicSetup(){
 	near = 0.1;
 	far = 1000;
 	camera = new THREE.PerspectiveCamera( fov, aspect, near, far );
-	camera.position.x = 7.4;
+	camera.position.x = 7.6;
 
 	// INIT RENDERER
 	renderer = new THREE.WebGLRenderer();
