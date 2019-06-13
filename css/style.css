@@ -63,7 +63,7 @@ a {
 
 #preloader img {
 	position: absolute;
-	left: 150vw;
+	right: 150vw;
 	top: 150vh;
 }
 
