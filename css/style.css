@@ -46,7 +46,7 @@ a {
 #preloader {
 	opacity: 1;
 	position: fixed;
-	right: 150;
+	left: 0;
 	top: 0;
 	z-index: 9999;
 	width: 100%;
